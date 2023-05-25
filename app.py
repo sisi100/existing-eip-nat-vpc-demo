@@ -16,7 +16,7 @@ vpc = aws_ec2.Vpc(
     stack,
     "Vpc",
     cidr="10.123.0.0/16",
-    max_azs=2,
+    max_azs=1,
     nat_gateway_provider=nat,
     subnet_configuration=[
         aws_ec2.SubnetConfiguration(
